@@ -1,0 +1,49 @@
+.headline
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-align:center;
+}
+.list
+{
+    display: flex;
+    justify-content: center;
+}
+.item
+{
+    background-color: pink;
+    flex: none;
+    width: 280px;
+    margin: 10px;
+}
+.destopmenu
+{
+    text-align: center;
+    display: block;
+}
+.mobilemenu
+{
+    text-align: center;
+    display: none;
+}
+@media only screen and (max-width:1000px) 
+{  
+    .list{flex-wrap: wrap;}
+    .item{width:45%}
+}
+
+@media only screen and (max-width:500px) 
+{  
+    .headline{font-size: 20px;}
+    .destopmenu
+    {
+        text-align: center;
+        display: none;
+    }
+    .mobilemenu
+    {
+        text-align: center;
+        display: block;
+    }
+    .item{width:90%}
+}
