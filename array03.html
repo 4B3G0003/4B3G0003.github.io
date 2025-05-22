@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let drinks=['卡布奇諾','拿鐵','珍珠奶查','長島餅茶','愛爾蘭咖啡','藍色西威儀','應是水果冰茶'];
+        document.write("<table border='1'>");
+        for(let i=0;i<drinks.length;i++)
+        {
+            document.write('<td>飲料'+(i+1)+'</td>');
+        }
+        document.write("<tr></tr>")
+        for(let i=0;i<drinks.length;i++)
+        {
+            document.write('<td>'+drinks[i]+'</td>');
+        }
+        document.write("</table>");
+
+       
+    </script>
+</body>
+</html>

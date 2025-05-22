@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let h=[
+            ["姓名","國文" ,"英文" ,"數學"],
+            ["王大同","85" ,"88" ,"87"],
+            ["林麥可","99" ,"86" ,"89"],
+            ["張淑芬","75" ,"92" ,"86"],
+        ]
+
+        document.write("<table border='1'>");
+        for(var i=0;i<h.length;i++)
+        {
+            for(var j=0;j<h[i].length;j++)
+            {
+                document.write('<td>'+h[i][j]+'</td>');
+            }
+            document.write("<tr></tr>")
+        }
+
+        document.write("</table>");
+
+    </script>
+</body>
+</html>
