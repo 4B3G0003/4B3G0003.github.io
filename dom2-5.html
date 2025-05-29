@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onclick="cd()">關於我</div>
+    <div onclick="cc();">學經歷</div>
+    <br/>
+    <div id="me">大家好我是黃老師</div>
+    <div id="dd" style="display: none;">我是台科大資工系學生</div>
+    <script>
+        function cc()
+        {
+            let mediv=document.querySelector("#me");
+            let dddiv=document.querySelector("#dd");
+            mediv.style.display="none";
+            dddiv.style.display="block";
+        }
+        function cd()
+        {
+            let mediv=document.querySelector("#me");
+            let dddiv=document.querySelector("#dd");
+            mediv.style.display="block";
+            dddiv.style.display="none";
+        }
+
+
+    </script>
+</body>
+</html>

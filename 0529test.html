@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>花卉介紹</h1>
+        <span onclick="a()">鬱金香</span>
+        <span onclick="b()">向日葵</span>
+        <br/>
+        
+        <div id="aa"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/RedTulip.JPG/250px-RedTulip.JPG"><br/>多年生草本植物，鱗莖扁圓錐形或扁卵圓形，長約2釐米，具棕褐色皮股，外被淡黃色纖維狀皮膜。莖葉光滑具白粉。</div>
+
+        <div id="bb" style="display: none;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Eberndorf_K%C3%B6cking_Sonnenblumenfeld_Biohof_Tomic_18072014_0792.jpg/250px-Eberndorf_K%C3%B6cking_Sonnenblumenfeld_Biohof_Tomic_18072014_0792.jpg"><br/>一年生草本。莖直立，圓形多稜角，質硬白色粗硬毛。廣卵形的葉片通常互生，先端銳突或漸尖，有基出3脈，邊緣具粗鋸齒，兩面粗糙，被毛，有長柄。</div>
+    </div>
+    <script>
+        function a()
+        {
+            let adiv=document.querySelector("#aa");
+            let bdiv=document.querySelector("#bb");
+            adiv.style.display="block";
+            bdiv.style.display="none";
+        }
+        function b()
+        {
+            let adiv=document.querySelector("#aa");
+            let bdiv=document.querySelector("#bb");
+            
+            adiv.style.display="none";
+            bdiv.style.display="block";
+        }
+    </script>
+</body>
+</html>
