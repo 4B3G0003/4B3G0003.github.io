@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="bb()">購物車總額:<span id="all"></span> </button>
+    <button onclick="cc()">清空購物車</button>
+
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Honeycrisp.jpg/250px-Honeycrisp.jpg">
+    <p>$50</p>
+    <button onclick="add()">加入購物車</button>
+    <br>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bufo_periglenes1.jpg/250px-Bufo_periglenes1.jpg">
+    <p>$60</p>
+    <button onclick="add2()">加入購物車</button>
+    <script>
+        if (localStorage.getItem("total") === null) {
+            localStorage.setItem("total", "0");
+        }
+        
+        let total,aa=0;
+        total =  localStorage.getItem("total");
+        aa = parseInt(total);
+
+        function add()
+        {
+            let aa=Number(localStorage.getItem("total"));
+            aa+=50;
+            localStorage.setItem("total", aa.toString());
+            console.log(aa);
+        }
+        function add2()
+        {
+            let aa=Number(localStorage.getItem("total"));
+            aa+=60;
+            localStorage.setItem("total", aa.toString());
+            console.log(aa);
+        }
+        function cc()
+        {
+            let aa=0;
+            localStorage.setItem("total", aa.toString());
+            console.log(aa);
+        }
+        function bb()
+        {
+            let aa=Number(localStorage.getItem("total"));
+            document.getElementById("all").innerHTML=aa;
+        }
+    </script>
+</body>
+</html>
